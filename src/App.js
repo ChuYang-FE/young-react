@@ -1,7 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
+import NameCard from './Components/NameCard';
 import './App.css';
 
+const tags = ['Vue.js', 'React.js', 'Be Bound To Be Free'];
 function App() {
   return (
     <div className="App">
@@ -19,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <NameCard name="Young" phoneNum={131} city="广州/深圳" tags={tags}></NameCard>
     </div>
   );
 }
