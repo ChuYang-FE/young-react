@@ -4,8 +4,8 @@ class NameCard extends React.Component {
   render() {
     const { name, phoneNum, city, tags } = this.props
     return (
-      <div>
-        <h4>{name}</h4>
+      <div className="alert alert-success">
+        <h4 className="alert-header">{name}</h4>
         <ul>
           <li>电话：{phoneNum}</li>
           <li>城市：{city}</li>
@@ -13,7 +13,7 @@ class NameCard extends React.Component {
         <hr/>
         <p>
           { tags.map((tag,index) => (
-            <span key={index}>{tag} + </span>
+            <span className="badge badge-pill badge-primary" key={index}>{tag}</span>
           ))}
         </p>
       </div>
