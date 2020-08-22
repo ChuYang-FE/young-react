@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import NameCard from './Components/NameCard';
 import LikesButton from './Components/LikesButton';
 import DigitalClock from './Components/DigitalClock';
+import CommentBox from './Components/CommentBox';
 import './App.css';
 
 const tags = ['Vue.js', 'React.js', 'Be Bound To Be Free'];
@@ -26,6 +27,7 @@ function App() {
       <NameCard name="Young" phoneNum={131} city="广州/深圳" tags={tags}></NameCard>
       <LikesButton></LikesButton>
       <DigitalClock></DigitalClock>
+      <CommentBox></CommentBox>
     </div>
   );
 }
