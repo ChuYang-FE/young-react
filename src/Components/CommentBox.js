@@ -6,7 +6,8 @@ class CommentBox extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(e) {
-    alert(this.textInput.value)
+    this.props.onAddComments(this.textInput.value);
+    this.textInput.value = '';
     e.preventDefault();
   }
   render() {
@@ -17,6 +18,7 @@ class CommentBox extends React.Component {
           <input type="text" className="form-control" placeholder="请输入留言" ref={(textInput) => {this.textInput = textInput}}/>
         </div>
         <button type="submit" className="btn btn-primary">留言</button>
+        <p>已有{this.props.commentsLength}条留言</p>
       </form>
     )
   }
