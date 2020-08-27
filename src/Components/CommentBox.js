@@ -8,6 +8,7 @@ class CommentBox extends React.Component {
   handleSubmit(e) {
     this.props.onAddComments(this.textInput.value);
     this.textInput.value = '';
+    this.textInput.focus();
     e.preventDefault();
   }
   render() {
