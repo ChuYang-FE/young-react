@@ -28,7 +28,7 @@ class FilterableProductTable extends React.Component {
   
   render() {
     return (
-      <div className="alert alert-success">
+      <div className="alert alert-success" style={{minHeight:'36vh'}}>
         <SearchBar
           filterText={this.state.filterText}
           inStockOnly={this.state.inStockOnly}

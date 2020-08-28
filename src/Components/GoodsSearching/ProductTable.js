@@ -35,7 +35,7 @@ class ProductTable extends React.Component {
     });
 
     return (
-      <table>
+      <table className="productTable">
         <thead>
           <tr>
             <th>Name</th>
