@@ -6,8 +6,12 @@ class CommentBox extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleSubmit(e) {
-    this.props.onAddComments(this.textInput.value);
-    this.textInput.value = '';
+    if(this.textInput.value !== ""){
+      this.props.onAddComments(this.textInput.value);
+      this.textInput.value = '';
+    } else {
+      alert('请输入留言内容~');
+    }
     this.textInput.focus();
     e.preventDefault();
   }
