@@ -9,10 +9,10 @@ class LikesButton extends React.Component {
   }
 
   increaseLikes() {
-    this.setState((state) => {
-      return {
-        likes:state.likes++
-      }
+    this.setState((state) => ({
+      likes:state.likes++
+    }), () => {
+      console.log(this.state.likes);
     })
   }
 
