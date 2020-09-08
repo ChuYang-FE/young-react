@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import Welcome from './Welcome';
 import FilterableProductTable from './Components/GoodsSearching/FilterableProductTable';
+import Game from './Components/TicTacToe';
 import * as serviceWorker from './serviceWorker';
 
 const PRODUCTS = [
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Welcome />
     <App />
     <FilterableProductTable products={PRODUCTS} />
+    <Game />
   </React.StrictMode>,
   document.getElementById('root')
 );
