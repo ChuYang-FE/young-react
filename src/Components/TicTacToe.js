@@ -18,7 +18,7 @@ class Board extends React.Component {
   }
 
   handleClick(i) {
-    //用slice()创建squares数组的副本。
+    //用slice()创建squares数组的副本，以保持原数组不变。
     const squares = this.state.squares.slice();
     if(calculateWinner(squares) || squares[i]) {
       return;
