@@ -6,6 +6,7 @@ import App from './App';
 import Welcome from './Welcome';
 import FilterableProductTable from './Components/GoodsSearching/FilterableProductTable';
 import Game from './Components/TicTacToe';
+import TestBtn from './Components/TestBtn';
 import * as serviceWorker from './serviceWorker';
 
 const PRODUCTS = [
@@ -24,6 +25,7 @@ ReactDOM.render(
     <App />
     <FilterableProductTable products={PRODUCTS} />
     <Game />
+    <TestBtn />
   </React.StrictMode>,
   document.getElementById('root')
 );
