@@ -8,6 +8,7 @@ import FilterableProductTable from './Components/GoodsSearching/FilterableProduc
 import Game from './Components/TicTacToe';
 import TestBtn from './Components/TestBtn';
 import * as serviceWorker from './serviceWorker';
+import Fetch from './Fetch/Fetch';
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -26,6 +27,8 @@ ReactDOM.render(
     <FilterableProductTable products={PRODUCTS} />
     <Game />
     <TestBtn />
+    <hr />
+    <Fetch />
   </React.StrictMode>,
   document.getElementById('root')
 );
