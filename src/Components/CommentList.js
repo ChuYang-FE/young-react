@@ -6,7 +6,7 @@ const CommentList = ({ comments }) => {
       <label>评论列表</label>
       <ul>
         {comments.map((comment, index) => 
-          <li key="{index}" className="list-group-item">{comment}</li>
+          <li key={index} className="list-group-item">{comment}</li>
         )
         }
       </ul>
