@@ -8,7 +8,7 @@ class TestBtn extends React.Component {
   }
   render(){
     return(
-      <button onClick={ this.handleClick.bind(this) }>组件Btn跳转到Home</button>
+      <button onClick={ this.handleClick.bind(this) }>组件Btn跳转到Home页面</button>
     )
   }
 } 
