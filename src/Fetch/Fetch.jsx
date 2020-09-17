@@ -45,6 +45,40 @@ class Fetch extends React.Component {
     .then(data => {
       console.log(data);
     });
+
+    // 请求数据
+    this.getAllData2();
+  }
+
+  // async await
+  // 模拟请求
+  getPromise = (str = 'success') => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(str), 2000);
+    });
+  }
+
+  getAllData1 = async () => {
+    console.log('start');
+    const data1 = await this.getPromise('data1');
+    // 2秒后才打印hello!和data1
+    console.log('hello!');
+    console.log(data1);
+    const data2 = await this.getPromise('data2');
+    //又2秒后打印data2
+    console.log(data2); 
+  }
+
+  getAllData2 = async () => {
+    console.log('start');
+    const [data1, data2] = await Promise.all([this.getPromise('data1'), this.getPromise('data2')])
+    // const getPro1 = this.getPromise('data1');
+    // const getPro2 = this.getPromise('data2');
+    // const data1 = await getPro1;
+    console.log(data1);
+    console.log('hello!');
+    // const data2 = await getPro2;
+    console.log(data2);
   }
 
   render() {
