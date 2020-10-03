@@ -60,20 +60,40 @@ class App extends Component {
             >
               Learn React
             </a>
-            <br/>
-            <a href="#theme-switcher" className="btn btn-light" onClick={() => {this.changeTheme('light')}}>
+            <br />
+            <a
+              href="#theme-switcher"
+              className="btn btn-light"
+              onClick={() => {
+                this.changeTheme("light");
+              }}
+            >
               浅色主题
             </a>
-            <a href="#theme-switcher" className="btn btn-secondary" onClick={() => {this.changeTheme('dark')}}>
+            <a
+              href="#theme-switcher"
+              className="btn btn-secondary"
+              onClick={() => {
+                this.changeTheme("dark");
+              }}
+            >
               深色主题
             </a>
-          <ThemedBar></ThemedBar>
+            <ThemedBar></ThemedBar>
           </header>
-          <NameCard name="Young" phoneNum={131} city="广州/深圳" tags={tags}></NameCard>
+          <NameCard
+            name="Young"
+            phoneNum={131}
+            city="广州/深圳"
+            tags={tags}
+          ></NameCard>
           <LikesButton></LikesButton>
           <DigitalClock></DigitalClock>
           <CommentList comments={comments}></CommentList>
-          <CommentBox commentsLength={comments.length} onAddComments={this.addComments}></CommentBox>
+          <CommentBox
+            commentsLength={comments.length}
+            onAddComments={this.addComments}
+          ></CommentBox>
         </div>
       </ThemeContext.Provider>
     ); 

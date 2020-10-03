@@ -9,6 +9,8 @@ import Game from './Components/TicTacToe';
 import * as serviceWorker from './serviceWorker';
 import Fetch from './Fetch/Fetch';
 import NavAndShow from './Components/Nav/NavAndShow';
+import FirstHook from "./Hook/FirstHook.jsx";
+
 
 const PRODUCTS = [
   {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
@@ -29,8 +31,11 @@ ReactDOM.render(
     <hr />
     <Fetch />
     <NavAndShow />
+    <hr />
+    <h2>hook</h2>
+    <FirstHook />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
