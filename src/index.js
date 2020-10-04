@@ -10,6 +10,8 @@ import * as serviceWorker from './serviceWorker';
 import Fetch from './Fetch/Fetch';
 import NavAndShow from './Components/Nav/NavAndShow';
 import FirstHook from "./Hook/FirstHook.jsx";
+import RandomUser from "./Hook/UseStateAndUseEffect/RandomUser.jsx";
+import TokenApp from "./Hook/UseStateAndUseEffect/Token.jsx";
 
 
 const PRODUCTS = [
@@ -34,6 +36,10 @@ ReactDOM.render(
     <hr />
     <h2>hook</h2>
     <FirstHook />
+    <hr />
+    <RandomUser />
+    <hr />
+    <TokenApp />
   </React.StrictMode>,
   document.getElementById("root")
 );
