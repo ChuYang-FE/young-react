@@ -13,6 +13,9 @@ import FirstHook from "./Hook/FirstHook.jsx";
 import RandomUser from "./Hook/UseStateAndUseEffect/RandomUser.jsx";
 import TokenApp from "./Hook/UseStateAndUseEffect/Token.jsx";
 import TodoList from "./Hook/ToDo/ToDoList";
+import HookFetch from "./Hook/Fetch/Fetch";
+import NextPage from "./Hook/Fetch/NextPage";
+import UseCallBack from "./Hook/OtherHook/UseCallBack";
 
 
 const PRODUCTS = [
@@ -43,6 +46,13 @@ ReactDOM.render(
     <TokenApp />
     <h2>To Do List:</h2>
     <TodoList />
+    <hr />
+    <HookFetch />
+    <hr />
+    <h2>Fetching Next Page：</h2>
+    <NextPage />
+    <hr />
+    <UseCallBack />
   </React.StrictMode>,
   document.getElementById("root")
 );
