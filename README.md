@@ -1,4 +1,4 @@
-## Young's First React Project（Including some demos）
+## Young's First React Practicing Project（Including some demos）
 
 ## JSX
   1. JSX是一种JavaScript的语法扩展
