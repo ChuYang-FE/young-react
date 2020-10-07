@@ -5,5 +5,6 @@
   2. 是React.createElement()的语法糖
   3. 被编译成ReactElement对象
 
-git test
-update before 本地 pull
+## git test
+  1. while origin master is new(somebody push sth)
+  2. local master is not the latest
