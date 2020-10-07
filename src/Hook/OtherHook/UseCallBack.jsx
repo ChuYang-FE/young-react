@@ -14,12 +14,12 @@ const UseCallBack = () => {
 
   return (
     <div>
-      <p>{count}</p>
+      <span>{count} </span>
       <button onClick={handleClick}>count</button>
-      <p>{count1}</p>
       <button onClick={useCallback(() => setCount1(count1 + 1), [count1])}>
         count1
       </button>
+      <span> {count1}</span>
     </div>
   );
 };
