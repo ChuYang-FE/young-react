@@ -6,5 +6,6 @@
   3. 被编译成ReactElement对象
 
 ## git test
-  1. while origin master is new(somebody push sth)
+  1. while origin master is updated (somebody pushed sth new)
   2. local master is not the latest
+  3. origin master is not allowed to push directly
