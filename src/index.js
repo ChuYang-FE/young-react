@@ -16,6 +16,7 @@ import TodoList from "./Hook/ToDo/ToDoList";
 import HookFetch from "./Hook/Fetch/Fetch";
 import NextPage from "./Hook/Fetch/NextPage";
 import UseCallBack from "./Hook/OtherHook/UseCallBack";
+import MyUseReducer from "./Hook/UseReducer";
 
 const PRODUCTS = [
   {
@@ -82,6 +83,8 @@ ReactDOM.render(
     <NextPage />
     <hr />
     <UseCallBack />
+    <hr />
+    <MyUseReducer />
   </React.StrictMode>,
   document.getElementById("root")
 );
