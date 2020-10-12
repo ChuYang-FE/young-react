@@ -1,30 +1,48 @@
-import React from "react";
+import React, { useContext } from "react";
 import ThemeContext from "../theme-context";
 
 const ThemedBar = () => {
   return (
-    <ThemeContext.Consumer>
-      {
-        theme => {
-          return (
-            <div 
-              className="alert mt-5"
-              style = {
-                {
-                  backgroundColor: theme.bgColor,
-                  color: theme.color
-                }
-              }
-            >
-              样式区域
-              <br/>
-              <button className={theme.classnames}>样式按钮</button>
-            </div>
-          )
-        }
-      }
-    </ThemeContext.Consumer>
-  )
-}
+    // <ThemeContext.Consumer>
+    //   {
+    //     theme => {
+    //       return (
+    //         <div
+    //           className="alert mt-5"
+    //           style = {
+    //             {
+    //               backgroundColor: theme.bgColor,
+    //               color: theme.color
+    //             }
+    //           }
+    //         >
+    //           样式区域
+    //           <br/>
+    //           <button className={theme.classnames}>样式按钮</button>
+    //         </div>
+    //       )
+    //     }
+    //   }
+    // </ThemeContext.Consumer>
+    <ThemeBtn></ThemeBtn>
+  );
+};
+
+const ThemeBtn = () => {
+  const theme = useContext(ThemeContext);
+  return (
+    <div
+      className="alert mt-5"
+      style={{
+        backgroundColor: theme.bgColor,
+        color: theme.color,
+      }}
+    >
+      样式区域
+      <br />
+      <button className={theme.classnames}>样式按钮</button>
+    </div>
+  );
+};
 
 export default ThemedBar
