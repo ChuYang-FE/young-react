@@ -18,7 +18,7 @@ class Nav extends React.Component {
             }}>MyRouter页面</NavLink>
           </li>
           <li>
-            <NavLink activeClassName="routeSelected" to='/router/ucenter'>MyRouter页面下的UCenter页面</NavLink>
+            <NavLink activeClassName="routeSelected" to={{pathname:'/router/ucenter/441223'}}>MyRouter页面下的UCenter页面</NavLink>
           </li>
         </ul>
         { this.props.children || `Welcome to Nav!` }

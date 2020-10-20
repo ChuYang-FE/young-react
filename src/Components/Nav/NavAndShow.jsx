@@ -16,12 +16,12 @@ class NavAndShow extends React.Component {
         <Router>
           <Nav>
             <Switch>
-            <Route exact path="/home" component={ Home }></Route>
-            <Redirect exact from="/" to="/home" component={ Home }></Redirect>
-            <Route exact strict path="/router" component={ MyRouter }></Route>
-            <Route exact strict path="/router/ucenter/:name?" component={ UCenter }></Route>
-            <Route component={ NotFound }></Route>
-          </Switch>
+              <Route exact path="/home" component={ Home }></Route>
+              <Redirect exact from="/" to="/home" component={ Home }></Redirect>
+              <Route exact strict path="/router" component={ MyRouter }></Route>
+              <Route path="/router/ucenter/:id" component={ UCenter }></Route>
+              <Route component={ NotFound }></Route>
+            </Switch>
           </Nav>
         </Router>
       </div>
