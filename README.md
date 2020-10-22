@@ -19,3 +19,7 @@
   3. git pull origin master --rebase
   4. git push --set-upstream origin feat1
   5. merge request
+
+## git commit --amend
+  1. git add . + git commit --amend
+  2. if you want to edit commit message, press i.
