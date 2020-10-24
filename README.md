@@ -29,3 +29,11 @@
 
   1. How to show tags?  git show
   2. How to create tags? git tag -a v1.0 -m "my First git tag"
+
+## When sth new on the origin master, my way to git push
+
+  1. git checkout -b feat2
+  2. Finish my work, git add . + git commit
+  3. git rebase master(better than git pull origin master)
+  4. git push origin feat1
+  5. if exits conflicts: deal with it, "git add ." and then "git rebase --continue"
