@@ -6,7 +6,7 @@
   2. 是React.createElement()的语法糖
   3. 被编译成ReactElement对象
 
-## git
+## Git
 
   1. while origin master is updated (somebody pushed sth new)
   2. local master is not the latest
