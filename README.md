@@ -30,7 +30,7 @@
   1. How to show tags?  git show
   2. How to create tags? git tag -a v1.0 -m "my First git tag"
 
-## When sth new on the origin master, my way to git push
+## When sth new on the origin master, my way to git push(work-flow)
 
   1. git checkout -b feat2
   2. Finish my work, git add . + git commit
