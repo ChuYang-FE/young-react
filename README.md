@@ -20,7 +20,7 @@
   4. git push --set-upstream origin feat1
   5. merge request
 
-## git commit --amend
+## Git commit --amend
 
   1. git add . + git commit --amend
   2. if you want to edit commit message, press i and edit description.
