@@ -25,7 +25,7 @@
   1. git add . + git commit --amend
   2. if you want to edit commit message, press i and edit description.
 
-## git tag
+## Git tag
 
   1. How to show tags?  git show
   2. How to create tags? git tag -a v1.0 -m "my First git tag"
