@@ -17,6 +17,7 @@ import HookFetch from "./Hook/Fetch/Fetch";
 import NextPage from "./Hook/Fetch/NextPage";
 import UseCallBack from "./Hook/OtherHook/UseCallBack";
 import MyUseReducer from "./Hook/UseReducer";
+import TwoWayBinding from "./TwoWayBinding";
 
 const PRODUCTS = [
   {
@@ -85,6 +86,8 @@ ReactDOM.render(
     <UseCallBack />
     <hr />
     <MyUseReducer />
+    <hr />
+    <TwoWayBinding />
   </React.StrictMode>,
   document.getElementById("root")
 );
